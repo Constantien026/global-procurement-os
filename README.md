@@ -47,6 +47,24 @@ npm run dev     # start the server with auto-restart on file changes
 
 The database file is created automatically at `data/app.db` on first run.
 
+### Deploy to a public URL (Render)
+
+The repo ships a `render.yaml` blueprint, so the whole service is one click after you
+connect GitHub:
+
+1. Commit and push: `git add -A && git commit -m "deploy" && git push`
+2. Sign up at **https://render.com** with your GitHub account
+3. **New → Web Service → Connect** the `global-procurement-os` repository
+4. Render picks up `render.yaml` automatically (Node 22, `npm install`, `npm start`,
+   health check on `/api/health`) — just press **Create Web Service**
+5. Your site goes live at `https://global-procurement-os.onrender.com`
+
+> ⚠️ **Free tier caveat:** free instances have an *ephemeral* filesystem, so `data/app.db`
+> is wiped whenever the service redeploys or spins down (15 min of no traffic → ~1 min to
+> wake). The app re-seeds itself automatically on every boot, so visitors always see the
+> full demo — but new registrations, RFQs and chat messages don't persist between restarts.
+> Fix later with a paid disk or Render Postgres; the demo accounts always work either way.
+
 ---
 
 ## What was redesigned
