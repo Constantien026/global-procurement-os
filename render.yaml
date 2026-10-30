@@ -8,5 +8,6 @@ services:
     healthCheckPath: /api/health
     autoDeploy: true
     envVars:
+      # node:sqlite (used by db.js) is only unflagged from Node 24
       - key: NODE_VERSION
-        value: 22.11.0
+        value: 24.22.1

@@ -55,9 +55,14 @@ connect GitHub:
 1. Commit and push: `git add -A && git commit -m "deploy" && git push`
 2. Sign up at **https://render.com** with your GitHub account
 3. **New → Web Service → Connect** the `global-procurement-os` repository
-4. Render picks up `render.yaml` automatically (Node 22, `npm install`, `npm start`,
+4. Render picks up `render.yaml` automatically (Node 24, `npm install`, `npm start`,
    health check on `/api/health`) — just press **Create Web Service**
 5. Your site goes live at `https://global-procurement-os.onrender.com`
+
+> **Node version matters:** `db.js` uses `node:sqlite`, which is only available *without a
+> flag* from Node 24 (on Node 22 it needs `--experimental-sqlite` and the deploy dies with
+> `ERR_UNKNOWN_BUILTIN_MODULE`). `NODE_VERSION=24.22.1` in `render.yaml` plus the
+> `.node-version` file pin this — don't lower them.
 
 > ⚠️ **Free tier caveat:** free instances have an *ephemeral* filesystem, so `data/app.db`
 > is wiped whenever the service redeploys or spins down (15 min of no traffic → ~1 min to
