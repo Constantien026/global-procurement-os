@@ -1,0 +1,11 @@
+# dependencies
+node_modules/
+
+# sqlite database + WAL sidecars (regenerate with npm run seed)
+data/*.db
+data/*.db-wal
+data/*.db-shm
+
+# logs
+*.log
+npm-debug.log*

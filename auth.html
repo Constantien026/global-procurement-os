@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in — Global Procurement OS</title>
+  <meta name="description" content="Sign in to your Global Procurement OS workspace, or create a buyer or supplier account.">
+  <meta name="robots" content="noindex">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="auth-layout">
+    <!-- Brand panel -->
+    <aside class="auth-aside">
+      <a class="brand" href="/" aria-label="Back to the Global Procurement OS home page">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        </span>
+        <span class="brand-name">Global Procurement <span class="brand-name-accent">OS</span></span>
+      </a>
+
+      <div class="auth-aside-copy">
+        <h1>From requirement to after-sales, in one workspace.</h1>
+        <p>Connect global buyers with trusted manufacturers through AI — sourcing, quotations, orders and support.</p>
+        <ul class="auth-aside-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+            AI-drafted RFQs from a plain-language brief
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+            Verified manufacturers ranked by fit and capacity
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+            Structured quotes compared side by side
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+            After-sales support, parts and warranty tracking
+          </li>
+        </ul>
+      </div>
+
+      <p class="auth-aside-foot">© 2026 Global Procurement OS. All rights reserved.</p>
+    </aside>
+
+    <!-- Sign in / sign up -->
+    <main class="auth-main">
+      <div class="auth-tools">
+        <div class="lang">
+          <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Change language">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+            <span>EN</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <ul class="lang-menu" role="listbox" aria-label="Language options" hidden>
+            <li role="option" aria-selected="true" data-lang="EN">English <span>EN</span></li>
+            <li role="option" aria-selected="false" data-lang="FR">Français <span>FR</span></li>
+            <li role="option" aria-selected="false" data-lang="ES">Español <span>ES</span></li>
+            <li role="option" aria-selected="false" data-lang="ZH">中文 <span>ZH</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="auth-card">
+        <div class="auth-tabs" role="tablist" aria-label="Authentication">
+          <button class="auth-tab is-active" type="button" role="tab" aria-selected="true" data-tab="signin">Sign in</button>
+          <button class="auth-tab" type="button" role="tab" aria-selected="false" data-tab="signup">Create account</button>
+        </div>
+
+        <div class="form-alert" id="auth-alert" role="alert" hidden></div>
+
+        <!-- Sign in -->
+        <section id="signin-pane">
+          <h2>Welcome back</h2>
+          <p class="form-intro">Sign in to your procurement workspace.</p>
+
+          <form class="auth-form" id="signin-form" novalidate>
+            <div class="field">
+              <label for="signin-email">Email</label>
+              <input id="signin-email" type="email" autocomplete="email" placeholder="you@company.com" required>
+              <p class="field-error" data-error-for="signin-email" hidden>Enter a valid email address.</p>
+            </div>
+
+            <div class="field">
+              <label for="signin-password">Password</label>
+              <input id="signin-password" type="password" autocomplete="current-password" placeholder="Your password" required>
+              <p class="field-error" data-error-for="signin-password" hidden>Enter your password.</p>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+          </form>
+        </section>
+
+        <!-- Sign up -->
+        <section id="signup-pane" hidden>
+          <h2>Create your account</h2>
+          <p class="form-intro">Set up a buyer or supplier workspace in under a minute.</p>
+
+          <form class="auth-form" id="signup-form" novalidate>
+            <div class="field">
+              <label for="signup-name">Full name</label>
+              <input id="signup-name" type="text" autocomplete="name" placeholder="Your name" required>
+              <p class="field-error" data-error-for="signup-name" hidden>Enter your full name.</p>
+            </div>
+
+            <div class="field">
+              <label for="signup-email">Email</label>
+              <input id="signup-email" type="email" autocomplete="email" placeholder="you@company.com" required>
+              <p class="field-error" data-error-for="signup-email" hidden>Enter a valid email address.</p>
+            </div>
+
+            <div class="field">
+              <label>I am joining as</label>
+              <div class="role-picker">
+                <label class="role-option">
+                  <input type="radio" name="role" value="buyer" checked>
+                  <span>Buyer — source products</span>
+                </label>
+                <label class="role-option">
+                  <input type="radio" name="role" value="supplier">
+                  <span>Supplier — sell products</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="signup-company">Company <span class="optional">optional</span></label>
+              <input id="signup-company" type="text" autocomplete="organization" placeholder="Company name">
+            </div>
+
+            <div class="field">
+              <label for="signup-password">Password</label>
+              <input id="signup-password" type="password" autocomplete="new-password" placeholder="At least 8 characters" required>
+              <p class="field-error" data-error-for="signup-password" hidden>Password must be at least 8 characters.</p>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Create account</button>
+          </form>
+        </section>
+
+        <div class="demo-note">
+          <strong>Demo logins</strong><br>
+          buyer <code>ada@buyer.demo</code> / <code>demo1234</code> &nbsp;·&nbsp;
+          supplier <code>liam@supplier.demo</code> / <code>demo1234</code><br>
+          admin <code>admin@globalprocurement.os</code> / <code>admin1234</code>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/i18n.js" defer></script>
+  <script src="/js/auth.js" defer></script>
+</body>
+</html>

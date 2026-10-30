@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global Procurement OS — AI Global Procurement Platform</title>
+  <meta name="description" content="Connect global buyers with trusted manufacturers through AI. Source products, match suppliers, and manage procurement end-to-end.">
+  <meta name="application-name" content="Global Procurement OS">
+  <meta name="keywords" content="procurement,sourcing,import,RFQ,global trade">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Global Procurement OS — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        </span>
+        <span class="brand-name">Global Procurement <span class="brand-name-accent">OS</span></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="#products">Products</a>
+        <a class="nav-link" href="#workflow">Workflow</a>
+        <a class="nav-link" href="#cases">Cases</a>
+        <a class="nav-link" href="#suppliers">Suppliers</a>
+        <div class="nav-mobile-actions">
+          <a class="btn btn-primary btn-block" href="/auth/sign-in">Start Procurement</a>
+          <a class="btn btn-secondary btn-block" href="/supplier/apply">Join Supplier Network</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang">
+          <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Change language">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+            <span>EN</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <ul class="lang-menu" role="listbox" aria-label="Language options" hidden>
+            <li role="option" aria-selected="true" data-lang="EN">English <span>EN</span></li>
+            <li role="option" aria-selected="false" data-lang="FR">Français <span>FR</span></li>
+            <li role="option" aria-selected="false" data-lang="ES">Español <span>ES</span></li>
+            <li role="option" aria-selected="false" data-lang="ZH">中文 <span>ZH</span></li>
+          </ul>
+        </div>
+
+        <a class="btn btn-primary btn-sm header-cta" id="header-cta" href="/auth/sign-in">Start Procurement</a>
+
+        <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================= HERO ============================= -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="hero-badge">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Enterprise-grade global sourcing
+          </p>
+
+          <h1 data-i18n-html>AI Global <span class="accent-text">Procurement</span> Platform</h1>
+          <p class="hero-sub">Connect global buyers with trusted manufacturers through AI.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="/auth/sign-in">
+              Start Procurement
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-secondary btn-lg" href="/supplier/apply">Join Supplier Network</a>
+          </div>
+
+          <ul class="hero-points">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+              Verified manufacturers
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+              Structured RFQs
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+              End-to-end logistics
+            </li>
+          </ul>
+        </div>
+
+        <!-- Decorative product preview -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="mock-window">
+            <div class="mock-titlebar">
+              <span class="mock-dots"><i></i><i></i><i></i></span>
+              <span class="mock-title">Procurement Workspace</span>
+              <span class="mock-live"><span class="live-dot"></span>Live</span>
+            </div>
+
+            <div class="mock-body">
+              <div class="mock-chat">
+                <p class="mock-msg mock-msg-user">Need 2,400 solar street lights delivered to Lagos, Nigeria. KEBS compliance required.</p>
+                <div class="mock-msg mock-msg-ai">
+                  <span class="mock-ai-label">AI Assistant</span>
+                  <p data-i18n-html>Matched <strong>14 verified suppliers</strong>. Est. lead time 21 days. Drafting RFQ with 3 shortlisted factories…</p>
+                </div>
+              </div>
+
+              <div class="mock-table">
+                <div class="mock-row mock-row-head">
+                  <span>Supplier</span><span>Match</span><span>Quote</span>
+                </div>
+                <div class="mock-row">
+                  <span><i class="mock-avatar" style="--a:#2563eb">GS</i>Guangzhou SolarTech</span>
+                  <span class="mock-match">96%</span>
+                  <span class="mock-price">$182,400</span>
+                </div>
+                <div class="mock-row">
+                  <span><i class="mock-avatar" style="--a:#0891b2">NP</i>Ningbo PowerWorks</span>
+                  <span class="mock-match">93%</span>
+                  <span class="mock-price">$176,900</span>
+                </div>
+                <div class="mock-row">
+                  <span><i class="mock-avatar" style="--a:#7c3aed">FE</i>Foshan EcoLamp</span>
+                  <span class="mock-match">89%</span>
+                  <span class="mock-price">$191,250</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mock-float">
+            <span class="mock-float-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>
+            </span>
+            <span>
+              <strong>RFQ ready</strong>
+              3 quotes received · 2 days early
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= TRUST STRIP ============================= -->
+    <section class="logos" aria-label="Trusted by">
+      <div class="container">
+        <p class="logos-label">Trusted by sourcing teams worldwide</p>
+        <ul class="logos-list">
+          <li>Meridian</li>
+          <li>Sahel Group</li>
+          <li>Atlas Textiles</li>
+          <li>Kibo Energy</li>
+          <li>Nordwind</li>
+          <li>Pearl Trading</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================= STATS ============================= -->
+    <section class="stats">
+      <div class="container">
+        <ul class="stats-grid">
+          <li class="stat reveal">
+            <span class="stat-value" data-count="12400" data-suffix="+">12,400+</span>
+            <span class="stat-label">Verified suppliers</span>
+          </li>
+          <li class="stat reveal">
+            <span class="stat-value" data-count="65" data-suffix="+">65+</span>
+            <span class="stat-label">Countries served</span>
+          </li>
+          <li class="stat reveal">
+            <span class="stat-value" data-count="38" data-suffix="%">38%</span>
+            <span class="stat-label">Average cost savings</span>
+          </li>
+          <li class="stat reveal">
+            <span class="stat-value" data-count="2.4" data-decimals="1" data-suffix=" days">2.4 days</span>
+            <span class="stat-label">Avg. quote turnaround</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================= PRODUCTS ============================= -->
+    <section class="section section-soft" id="products">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-kicker">Platform</p>
+          <h2>End-to-end procurement platform</h2>
+          <p class="section-sub">From AI sourcing to after-sales support — one connected workspace.</p>
+        </div>
+
+        <div class="card-grid card-grid-3">
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/><path d="M8 10h8M8 13.5h5"/></svg>
+            </div>
+            <h3>AI Procurement Assistant</h3>
+            <p>Describe what you need in plain language. Get product recommendations, import guidance, and RFQ drafts — powered by AI.</p>
+            <a class="text-link" href="/consultations">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg>
+            </div>
+            <h3>Supplier Marketplace</h3>
+            <p>Browse verified manufacturers, compare capabilities, and submit RFQs to matched suppliers worldwide.</p>
+            <a class="text-link" href="/marketplace">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/><path d="M12 7.5V12l3 1.8"/></svg>
+            </div>
+            <h3>After-sales AI Service</h3>
+            <p>AI-assisted diagnostics, spare parts sourcing, and warranty support — keeping your supply chain moving.</p>
+            <a class="text-link" href="/service">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= WORKFLOW ============================= -->
+    <section class="section" id="workflow">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-kicker">Process</p>
+          <h2>How it works</h2>
+          <p class="section-sub">A streamlined six-step process from requirement to after-sales.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-marker" aria-hidden="true">01</span>
+            <div class="step-body">
+              <h3>Requirement Submission</h3>
+              <p>Buyers describe products, quantities, and destination requirements.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-marker" aria-hidden="true">02</span>
+            <div class="step-body">
+              <h3>AI Analysis</h3>
+              <p>AI parses requirements, identifies specs, and flags compliance needs.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-marker" aria-hidden="true">03</span>
+            <div class="step-body">
+              <h3>Supplier Matching</h3>
+              <p>Verified manufacturers are ranked by fit, capacity, and track record.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-marker" aria-hidden="true">04</span>
+            <div class="step-body">
+              <h3>Quotation</h3>
+              <p>Structured quotes with pricing, lead times, and terms for comparison.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-marker" aria-hidden="true">05</span>
+            <div class="step-body">
+              <h3>Procurement</h3>
+              <p>Order placement, contracts, payments, and logistics coordination.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-marker" aria-hidden="true">06</span>
+            <div class="step-body">
+              <h3>After-sales</h3>
+              <p>Ongoing support, parts, repairs, and warranty management.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================= CASES ============================= -->
+    <section class="section section-soft" id="cases">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-kicker">Case studies</p>
+          <h2>Example Procurement Scenarios</h2>
+          <p class="section-sub">Illustrative sourcing journeys across Africa, the Middle East, and beyond.</p>
+          <p class="section-note">Example scenarios for demonstrating the platform workflow.</p>
+        </div>
+
+        <div class="card-grid card-grid-2">
+          <article class="case-card reveal">
+            <header class="case-head">
+              <div>
+                <h3>Lagos Trading Co.</h3>
+                <p class="case-meta">Lagos, Nigeria · Solar &amp; Energy</p>
+              </div>
+              <div class="case-badges">
+                <span class="badge badge-demo">Demo</span>
+                <span class="badge">ORG-001</span>
+              </div>
+            </header>
+            <p class="case-desc">Imported 2,400 solar street lights for municipal infrastructure projects across Lagos State.</p>
+            <p class="case-result">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17 9 11l4 4 8-8"/><path d="M21 7v5h-5"/></svg>
+              Reduced sourcing cycle from 8 weeks to 3 weeks with AI-matched suppliers.
+            </p>
+          </article>
+
+          <article class="case-card reveal">
+            <header class="case-head">
+              <div>
+                <h3>Accra Textile Imports</h3>
+                <p class="case-meta">Accra, Ghana · Textiles &amp; Apparel</p>
+              </div>
+              <div class="case-badges">
+                <span class="badge badge-demo">Demo</span>
+              </div>
+            </header>
+            <p class="case-desc">Sourced premium cotton fabrics and finished garments from vetted manufacturers in Guangdong.</p>
+            <p class="case-result">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17 9 11l4 4 8-8"/><path d="M21 7v5h-5"/></svg>
+              Achieved 18% cost savings through competitive multi-supplier quoting.
+            </p>
+          </article>
+
+          <article class="case-card reveal">
+            <header class="case-head">
+              <div>
+                <h3>Nairobi Agri Solutions</h3>
+                <p class="case-meta">Nairobi, Kenya · Agriculture Equipment</p>
+              </div>
+              <div class="case-badges">
+                <span class="badge badge-demo">Demo</span>
+              </div>
+            </header>
+            <p class="case-desc">Procured irrigation pumps and greenhouse components for East African farming cooperatives.</p>
+            <p class="case-result">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17 9 11l4 4 8-8"/><path d="M21 7v5h-5"/></svg>
+              Full compliance documentation delivered for Kenya Bureau of Standards.
+            </p>
+          </article>
+
+          <article class="case-card reveal">
+            <header class="case-head">
+              <div>
+                <h3>Gulf Electronics Trading</h3>
+                <p class="case-meta">Dubai, UAE · Consumer Electronics</p>
+              </div>
+              <div class="case-badges">
+                <span class="badge badge-demo">Demo</span>
+              </div>
+            </header>
+            <p class="case-desc">Bulk procurement of smart home devices with CE and GCC certification requirements.</p>
+            <p class="case-result">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17 9 11l4 4 8-8"/><path d="M21 7v5h-5"/></svg>
+              End-to-end logistics tracking from factory to Jebel Ali Free Zone.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= SUPPLIERS ============================= -->
+    <section class="section" id="suppliers">
+      <div class="container">
+        <div class="supplier-panel reveal">
+          <div class="supplier-info">
+            <p class="section-kicker kicker-light">For suppliers</p>
+            <h2>Join the Global Supplier Network</h2>
+            <p class="supplier-lead">Reach qualified buyers worldwide. Showcase your products, respond to RFQs, and grow your export business.</p>
+
+            <ul class="check-list">
+              <li>
+                <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span>
+                Access to verified international buyer inquiries
+              </li>
+              <li>
+                <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span>
+                AI-powered RFQ matching based on your product catalog
+              </li>
+              <li>
+                <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span>
+                Integrated order, contract, and payment workflows
+              </li>
+              <li>
+                <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span>
+                After-sales support tools to retain long-term customers
+              </li>
+              <li>
+                <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span>
+                Multi-language communication with global buyers
+              </li>
+            </ul>
+
+            <a class="btn btn-white" href="/supplier/apply">Apply as Supplier</a>
+          </div>
+
+          <div class="supplier-form">
+            <h3>Express interest</h3>
+            <p class="form-intro">Tell us about your manufacturing capabilities. Our team will follow up within 2 business days.</p>
+
+            <form id="supplier-form" novalidate>
+              <div class="field">
+                <label for="supplier-name">Contact name</label>
+                <input id="supplier-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+                <p class="field-error" data-error-for="supplier-name" hidden>Please enter your name.</p>
+              </div>
+
+              <div class="field">
+                <label for="supplier-email">Email</label>
+                <input id="supplier-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+                <p class="field-error" data-error-for="supplier-email" hidden>Please enter a valid email address.</p>
+              </div>
+
+              <div class="field">
+                <label for="supplier-company">Company <span class="optional">optional</span></label>
+                <input id="supplier-company" name="company" type="text" autocomplete="organization" placeholder="Manufacturing company">
+              </div>
+
+              <div class="field">
+                <label for="supplier-message">Message</label>
+                <textarea id="supplier-message" name="message" rows="3" minlength="10" required placeholder="Product categories, certifications, export experience..."></textarea>
+                <p class="field-error" data-error-for="supplier-message" hidden>Tell us a little more — at least 10 characters.</p>
+              </div>
+
+              <button class="btn btn-primary btn-block" type="submit">Submit application</button>
+              <p class="form-footnote">By submitting, you agree to be contacted about supplier onboarding.</p>
+            </form>
+
+            <div class="form-success" id="form-success" hidden>
+              <span class="form-success-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>
+              </span>
+              <h4>Application received</h4>
+              <p>Thanks for your interest — our supplier team will follow up within 2 business days.</p>
+              <button class="btn btn-secondary btn-sm" type="button" id="form-reset">Send another message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#top">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+            </span>
+            <span class="brand-name">Global Procurement <span class="brand-name-accent">OS</span></span>
+          </a>
+          <p class="footer-tagline">AI-powered global procurement for buyers and manufacturers.</p>
+          <a class="footer-mail" href="mailto:support@globalprocurement.os">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            support@globalprocurement.os
+          </a>
+        </div>
+
+        <nav class="footer-col" aria-label="Company">
+          <h4>Company</h4>
+          <a href="#" data-demo>About</a>
+          <a href="#" data-demo>Contact</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Legal">
+          <h4>Legal</h4>
+          <a href="#" data-demo>Privacy</a>
+          <a href="#" data-demo>Terms</a>
+        </nav>
+
+        <div class="footer-col">
+          <h4>Get started</h4>
+          <a href="/auth/sign-in">Start Procurement</a>
+          <a href="/supplier/apply">Apply as Supplier</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Global Procurement OS. All rights reserved.</p>
+        <p class="footer-note">Landing page redesign concept · Static HTML / CSS / JS</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span class="toast-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+    </span>
+    <span class="toast-text"></span>
+  </div>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
